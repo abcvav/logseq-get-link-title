@@ -1,0 +1,14 @@
+{
+  "name": "logseq-get-link-title",
+  "version": "0.0.1",
+  "description": "Automatically fetching title of a web link when pasted to block, and converting it into a hyperlink of markdown format ",
+  "main": "index.html",
+  "author": "Jialin Luo",
+  "dependencies": {
+    "@logseq/libs": "^0.0.15"
+  },
+  "logseq": {
+    "id": "_9kot8cf9c",
+    "icon": "Link.png"
+  }
+}
