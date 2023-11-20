@@ -1,3 +1,4 @@
+// TODO convert to ts
 async function getLinkTitle(link) {
 	return await fetch(link, {
 		headers: {
@@ -23,7 +24,9 @@ async function getLinkTitle(link) {
 
 function isMarkdownURL(content) {
 	let markdownURL = content.match(/\[.*?\]\((.*)?\)/);
-	return markdownURL && markdownURL[1] ? markdownURL[1] : null;
+	return markdownURL && markdownURL[0] == markdownURL[1]
+		? markdownURL[1]
+		: null;
 }
 
 async function main() {
